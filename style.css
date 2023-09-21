@@ -11,8 +11,8 @@
     src: url('Peyda-Regular.ttf');
 }
 
-
-body{
+/*  --------------------------------- 1 --------------------------------- */
+.main1 {
     text-align: right;
     height: 100vh;
     display: flex;
@@ -21,7 +21,7 @@ body{
     background: linear-gradient(135deg,#2e0023,#490050);
 }
 .background{
-    width: 500px;
+    width: 250px;
     height: 520px;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -34,22 +34,13 @@ body{
     position: absolute;
     border-radius: 50%;
 }
-.shape1:first-child{
+.shape1{
     background: linear-gradient(
         #e5fc64,
         #ff5e00
     );
-    left: -20px;
+    left: -130px;
     top: -100px;
-}
-.shape1:last-child{
-    background: linear-gradient(
-        to right,
-        #ff3c3c,
-        #ff9100
-    );
-    right: -30px;
-    bottom: -60px;
 }
 .background .shape2{
     height: 200px;
@@ -58,22 +49,15 @@ body{
     border-radius: 20%;
     transform: rotate(20deg);
 }
-.shape2:first-child{
-    background: linear-gradient(
-        #e5fc64,
-        #ff5e00
-    );
-    left: -20px;
-    top: -80px;
-}
-.shape2:last-child{
+
+.shape2{
     background: linear-gradient(
         to right,
         #ff3c3c,
         #ff9100
     );
-    right: -30px;
-    bottom: -120px;
+    right: -150px;
+    bottom: -100px;
 }
 form{
     height: 520px;
@@ -83,7 +67,7 @@ form{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    border-radius: 10px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.384);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
@@ -92,7 +76,6 @@ form{
 form *{
     font-family: "Peyda-Regular";
     color: #ffffff;
-    letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
@@ -150,3 +133,86 @@ button{
 .add a{
     text-decoration: none;
 }
+
+/*  --------------------------------- 2 --------------------------------- */
+
+/* font */
+.container div{
+    font-family: "Peyda-Regular";
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.container {
+    /* margin: 10px; */
+    padding: 10px;
+    min-height: 150px;
+    background-color: #a13647;
+    /* Flexbox */
+    display: flex;
+    flex-flow: row wrap;
+    }
+    .container .item {
+    background-color: #d84a43;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    min-height: 50px;
+    }
+    .item {
+    flex: 1; /*flex-grow: 1;*/
+    }
+    .item.header {
+    flex: 100%; /*flex-basis: 100%;*/
+    }
+    .item.aside {
+    flex: 0 200px; /*flex-grow: 0; flex-basis: 200px;*/
+    height: 150px;
+    }
+    .item.main {
+    flex: 1 auto; /*flex-grow: 1; flex-basis: auto ;*/
+    }
+    .item.footer {
+    flex: 100%;
+    }
+    @media screen and (max-width: 950px) {
+    .item.header {
+    order: 1;
+    }
+    .item.aside {
+    flex: 1 auto;
+    }
+    .item.aside.aside1 {
+    order: 3;
+    }
+    .item.aside.aside2 {
+    order: 4;
+    }
+    .item.main {
+    order: 2;
+    flex: 1 100%;
+    }
+    .item.footer {
+    order: 5;
+    }
+    }
+    @media screen and (max-width: 600px) {
+    .item.aside {
+    flex: 100%; /* flex-basis: 100%; as min-width: 100%;*/
+    }
+    }
+
+
+/*  --------------------------------- 3 --------------------------------- */
+
+
+
+
+
+
+
+
+
+
