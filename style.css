@@ -13,22 +13,19 @@
 
 /*  --------------------------------- 1 --------------------------------- */
 .main1 {
-    text-align: right;
-    height: 100vh;
-    display: flex;
+    /* height: 100vh; */
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
+    display: flex;
+    overflow: hidden;
     background: linear-gradient(135deg,#2e0023,#490050);
 }
-.background{
-    width: 250px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape1{
+ .container0 {
+    position: relative;
+ }
+
+.container0 .shape1{
     height: 200px;
     width: 200px;
     position: absolute;
@@ -39,10 +36,10 @@
         #e5fc64,
         #ff5e00
     );
-    left: -130px;
-    top: -100px;
+    left: -71px;
+    top: 25px;
 }
-.background .shape2{
+.container0 .shape2{
     height: 200px;
     width: 200px;
     position: absolute;
@@ -56,22 +53,18 @@
         #ff3c3c,
         #ff9100
     );
-    right: -150px;
-    bottom: -100px;
+    right: -50px;
+    bottom: -20px;
 }
 form{
-    height: 520px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.384);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+    margin: 100px 0;
 }
 form *{
     font-family: "Peyda-Regular";
@@ -104,7 +97,6 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    text-align: right;
     font-size: ;
     color: #e5e5e5;
 }
@@ -137,7 +129,7 @@ button{
 /*  --------------------------------- 2 --------------------------------- */
 
 /* font */
-.container div{
+.container1 div{
     font-family: "Peyda-Regular";
     text-align: center;
     display: flex;
@@ -145,7 +137,7 @@ button{
     justify-content: center;
 }
 
-.container {
+.container1 {
     /* margin: 10px; */
     padding: 10px;
     min-height: 150px;
@@ -154,7 +146,7 @@ button{
     display: flex;
     flex-flow: row wrap;
     }
-    .container .item {
+    .container1 .item {
     background-color: #d84a43;
     color: #fff;
     margin: 10px;
@@ -207,6 +199,31 @@ button{
 
 /*  --------------------------------- 3 --------------------------------- */
 
+.relativ { 
+    right: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    display: flex;
+    position: absolute;
+    
+    
+}
+.absolote { 
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: #ff3c3c;
+    position: absolute;
+}
+
+.box { 
+    right: 300px;
+    width: 50px;
+    height: 50px;
+    background-color: #27eb00;
+    position: absolute;
+}
 
 
 
