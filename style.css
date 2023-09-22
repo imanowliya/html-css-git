@@ -199,22 +199,20 @@ button{
 
 /*  --------------------------------- 3 --------------------------------- */
 
-.relativ { 
-    right: 300px;
+.Parent { 
     width: 500px;
     height: 500px;
     background-color: skyblue;
-    display: flex;
-    position: absolute;
-    
+    position: relative;
     
 }
-.absolote { 
-    right: 50px;
+.Child { 
     width: 200px;
     height: 200px;
     background-color: #ff3c3c;
     position: absolute;
+    right: 50px;
+    top: 50px;
 }
 
 .box { 
@@ -223,6 +221,8 @@ button{
     height: 50px;
     background-color: #27eb00;
     position: absolute;
+    right: 50px;
+    top: 50px;
 }
 
 
