@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Peyda-Regular";
-    src: url('Peyda-Regular.ttf');
+    src: url('font/Peyda-Regular.ttf');
 }
 
 /*  --------------------------------- 1 --------------------------------- */
@@ -97,7 +97,7 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    font-size: ;
+    font-size: 10px;
     color: #e5e5e5;
 }
 button{
