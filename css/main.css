@@ -7,14 +7,10 @@
 }
 
 @font-face {
-  font-family: "noob";
-  src: url("../font/Peyda-Regular.ttf") format("ttf");
+  font-family: "Peyda-Regular";
+  src: url("../font/Peyda-Regular.ttf");
 }
 /*  --------------------------------- 1 --------------------------------- */
-body {
-  font-family: "peyda-Rugular";
-}
-
 .main1 {
   /* height: 100vh; */
   min-height: 100vh;
@@ -69,7 +65,7 @@ form {
 }
 
 form * {
-  font: "noob";
+  font-family: "Peyda-Regular";
   color: #ffffff;
   outline: none;
   border: none;
